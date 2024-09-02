@@ -7,22 +7,50 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
             text-align: center;
-            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .section {
+            flex: 1 1 300px;
+            max-width: 300px;
+        }
+        h1, h2 {
+            font-size: 4vw;
+            margin-bottom: 20px;
         }
         h1 {
             color: #FF6347;
         }
+        h2 {
+            color: #4682B4;
+        }
         img {
             border-radius: 50%;
-            width: 300px;
-            height: 300px;
+            width: 100%;
+            height: auto;
             object-fit: cover;
         }
     </style>
 </head>
 <body>
-    <h1>Kevalamanavan Garry</h1>
-    <img src="./hk.png" alt="Funny cat">
+    <div class="container">
+        <div class="section">
+            <h1>Kevalamanavan</h1>
+            <img src="./hk.png" alt="Funny cat">
+        </div>
+
+        <div class="section">
+            <h2>Golti</h2>
+            <img src="./sg.jpeg" alt="Funny dog">
+        </div>
+    </div>
 </body>
 </html>
